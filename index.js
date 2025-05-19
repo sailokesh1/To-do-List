@@ -30,9 +30,6 @@ app.post("/", (req, res) => {
 
 
 app.get("/:id", (req, res) => {
-    console.log(req.params.id);
-    console.log(typeof (req.params.id));
-
     let id = parseInt(req.params.id)
     const todo = todos.find(x => x.id === id)  
     console.log(todo);
